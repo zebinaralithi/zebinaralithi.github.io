@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Zebin Ara Lithi, MBBS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1b19;--surface:#142623;--ink:#e6f1ee;--muted:#9bb2ae;--teal:#4fc4b6;--teal-d:#8fe0d5;--line:#27403b;--tint:#17302c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#f3f8f6;--surface:#fff;--ink:#17302b;--muted:#53696a;--teal:#0f6b63;--teal-d:#0a4a45;--line:#d3e2de;--tint:#e1f0ec}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;justify-content:flex-end;padding:20px 0;font-weight:500;font-size:15px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--teal)}
+.hero{display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:center;padding:40px 0 72px}
+.hero{position:relative}.hero>div{position:relative;z-index:1}.ecg{position:absolute;left:0;right:0;bottom:10px;width:100%;height:110px;z-index:0;pointer-events:none}.ecg path{fill:none;stroke:var(--teal);stroke-width:2.5;opacity:.35;vector-effect:non-scaling-stroke;stroke-dasharray:1000;stroke-dashoffset:1000;animation:dr 3.2s ease-out .3s forwards}@keyframes dr{to{stroke-dashoffset:0}}.mono{box-shadow:0 0 0 10px var(--tint),0 0 0 11px var(--line)}
+.hero h1{font-size:clamp(2.6rem,6.5vw,4.6rem);letter-spacing:-.02em}
+.role{font-size:1.2rem;color:var(--teal);font-weight:600;margin:14px 0 18px}
+.lede{max-width:52ch;color:var(--muted);font-size:1.1rem}
+.cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--teal)}
+.btn.p{background:var(--teal);color:var(--bg)}.btn.s{color:var(--teal)}
+.mono{aspect-ratio:1;width:220px;border-radius:50% 50% 50% 8%;background:var(--teal);overflow:hidden;display:block;object-fit:cover;object-position:center top}
+.cred{background:var(--teal-d);color:#fff;padding:22px 0}
+.cred .wrap{display:flex;gap:12px 40px;flex-wrap:wrap;justify-content:space-between;font-size:15px}
+.cred b{font-family:Fraunces,serif;font-size:1.15rem;font-weight:600;display:block}
+section{padding:72px 0 8px}
+h2{font-size:2rem;margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.box h3{font-size:1.15rem;margin-bottom:6px}.box p{margin:0;color:var(--muted);font-size:15px}
+.tl{border-left:3px solid var(--line);margin-left:6px;padding-left:28px}
+.tl article{position:relative;padding-bottom:30px}
+.tl article::before{content:"";position:absolute;left:-37px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--teal);border:3px solid var(--bg)}
+.tl h3{font-size:1.2rem}.tl .m{color:var(--teal);font-weight:600;font-size:15px}.tl p{margin:4px 0 0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.tags li{background:var(--tint);padding:7px 16px;border-radius:999px;font-size:15px;font-weight:500}
+.docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.docs div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;font-size:15px}
+.docs b{display:block;font-family:Fraunces,serif;font-size:1.05rem}
+.docs span{color:var(--muted)}
+.verify{margin-top:28px;display:flex;gap:22px;align-items:center;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.verify img{width:148px;height:auto;background:#fff;border-radius:8px;padding:8px;display:block}
+.verify p{margin:0;color:var(--muted);font-size:15px}
+.verify a.btn{margin-top:14px}
+footer{margin-top:72px;border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:720px){.hero{grid-template-columns:1fr;gap:28px}.mono{width:150px}nav{justify-content:flex-start}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ecg path{animation:none;stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#about">About</a><a href="#education">Education</a><a href="#credentials">Credentials</a><a href="#references">References</a><a href="#contact">Contact</a></nav>
+<header class="hero"><svg class="ecg" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1000" d="M0 60H280l14-12 14 12h50l14 8 22-52 26 90 22-46h24l14-10 14 10H1000"/></svg>
+<div>
+<h1>Dr. Zebin Ara Lithi</h1>
+<p class="role">Medical Doctor, MBBS</p>
+<p class="lede">I work to connect social behavior with physical health, so that health policy treats the whole person. My focus is women’s rights and mental health in a changing world.</p>
+<div class="cta"><a class="btn p" href="mailto:zebinaralithi@gmail.com">Email me</a><a class="btn s" href="#education">View my training</a></div>
+</div>
+<img class="mono" src="zebin-ara-lithi.png" width="220" height="220" alt="Portrait of Dr. Zebin Ara Lithi">
+</header>
+</div>
+<div class="cred"><div class="wrap">
+<div><b>MBBS, TMSS Medical College, Bogura</b>Passed 2020</div>
+<div><b>BM&amp;DC Reg. No. A-119169</b><a href="https://verify.bmdc.org.bd/regdata/8sCUeyb1KYfoGj16fDoxOvsVTk5r2luuCru.KMa6yNi.vmEFWXbiX8f3QvlniHFiGzU4HLowS~fnPaQ8tFUqqj3WoCXnnvXBUPYWUvh.nS~7zp2rd9tXUBCGtAzQz.U9" target="_blank" rel="noopener noreferrer" style="color:inherit">Verify registration</a></div>
+<div><b>Internship completed</b>July 2021 – June 2022</div>
+</div></div>
+<main class="wrap">
+<section id="about">
+<h2>About</h2>
+<div class="grid">
+<div class="box"><h3>Women’s health</h3><p>Trained in Obstetrics &amp; Gynaecology, with a commitment to establishing women’s rights in care.</p></div>
+<div class="box"><h3>Mental health</h3><p>I see mental wellbeing as part of every clinical encounter, not a separate topic.</p></div>
+<div class="box"><h3>Health policy</h3><p>I want social behavior and physical condition to be considered together when health policy is made.</p></div>
+</div>
+</section>
+<section id="education">
+<h2>Training and education</h2>
+<div class="tl">
+<article><span class="m">July 2021 – June 2022</span><h3>Medical Internship</h3><p>TMSS Medical College &amp; Rofatullah Community Hospital, Bogura</p></article>
+<article><span class="m">Passed 2020</span><h3>Bachelor of Medicine and Bachelor of Surgery (MBBS)</h3><p>TMSS Medical College, under Rajshahi University. Major courses: Internal Medicine, Surgery, Obstetrics &amp; Gynaecology.</p></article>
+<article><span class="m">2014</span><h3>Higher Secondary Certificate, Science</h3><p>Government Azizul Haque College, Bogura. GPA 5.00 out of 5.00.</p></article>
+<article><span class="m">2012</span><h3>Secondary School Certificate, Science</h3><p>Bogura Cantonment Public School and College. GPA 5.00 out of 5.00.</p></article>
+</div>
+</section>
+<section id="credentials">
+<h2>Verified credentials</h2>
+<div class="docs">
+<div><b>MBBS degree</b><span>University of Rajshahi, November 2020 examination</span></div>
+<div><b>Medical registration</b><span>Bangladesh Medical and Dental Council, registered 11 December 2022. <a href="https://verify.bmdc.org.bd/regdata/8sCUeyb1KYfoGj16fDoxOvsVTk5r2luuCru.KMa6yNi.vmEFWXbiX8f3QvlniHFiGzU4HLowS~fnPaQ8tFUqqj3WoCXnnvXBUPYWUvh.nS~7zp2rd9tXUBCGtAzQz.U9" target="_blank" rel="noopener noreferrer">Verify on BM&amp;DC</a></span></div>
+<div><b>HSC certificate</b><span>Board of Intermediate and Secondary Education, Rajshahi, 2014</span></div>
+<div><b>SSC certificate</b><span>Board of Intermediate and Secondary Education, Rajshahi, 2012</span></div>
+</div>
+<div class="verify">
+<a href="https://verify.bmdc.org.bd/regdata/8sCUeyb1KYfoGj16fDoxOvsVTk5r2luuCru.KMa6yNi.vmEFWXbiX8f3QvlniHFiGzU4HLowS~fnPaQ8tFUqqj3WoCXnnvXBUPYWUvh.nS~7zp2rd9tXUBCGtAzQz.U9" target="_blank" rel="noopener noreferrer">
+<img src="bmdc-verify-qr.png" width="148" height="137" alt="QR code to verify BMDC registration A-119169">
+</a>
+<div>
+<h3>Verify BM&amp;DC registration</h3>
+<p>Scan the QR code or open the official BM&amp;DC page to confirm registration no. A-119169.</p>
+<a class="btn s" href="https://verify.bmdc.org.bd/regdata/8sCUeyb1KYfoGj16fDoxOvsVTk5r2luuCru.KMa6yNi.vmEFWXbiX8f3QvlniHFiGzU4HLowS~fnPaQ8tFUqqj3WoCXnnvXBUPYWUvh.nS~7zp2rd9tXUBCGtAzQz.U9" target="_blank" rel="noopener noreferrer">Open verification</a>
+</div>
+</div>
+<h2 style="margin-top:44px">Skills and languages</h2>
+<ul class="tags"><li>MS Word</li><li>MS Excel</li><li>MS PowerPoint</li><li>Multimedia &amp; Internet</li><li>Bengali</li><li>English</li></ul>
+</section>
+<section id="references">
+<h2>References</h2>
+<div class="grid">
+<div class="box"><h3>Dr. Zakirul Alam</h3><p>Professor of Surgery, TMSS Medical College &amp; Rofatullah Community Hospital, Bogura<br><a href="mailto:drzakirul.alam@yahoo.com">drzakirul.alam@yahoo.com</a></p></div>
+<div class="box"><h3>Dr. Shajahan Ali Sarker</h3><p>Professor and Head of Dept. of Anatomy, TMSS Medical College &amp; Rofatullah Community Hospital, Bogura<br><a href="mailto:dr.shajahaali@gmail.com">dr.shajahaali@gmail.com</a></p></div>
+</div>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>Based in Adabor, Dhaka. Write or call to discuss opportunities.</p>
+<p><a href="mailto:zebinaralithi@gmail.com">zebinaralithi@gmail.com</a><br><a href="tel:+8801755732020">+880 1755 732020</a></p>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 Dr. Zebin Ara Lithi</span><span>BM&amp;DC Reg. No. A-119169</span></div></footer>
+</body>
+</html>
